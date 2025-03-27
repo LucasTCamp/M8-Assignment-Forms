@@ -10,9 +10,9 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
  // Check if the input value matches the pattern
  // Valid input: display confirmation and submit the form
     if (regex.test(inputField.value)) {
-        alert("VALID, Submitted");
+        inputField.setCustomValidity("THIS IS VALID, SUBMITTED");
  // Invalid input: display error message
     } else {
-        alert("INVALID, Try again");
+      inputField.setCustomValidity("THIS IS NOT VALID, ENTER IN AN ALPHANUMERIC INPUT");
     }
 });
